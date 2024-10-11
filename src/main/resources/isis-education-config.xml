@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module xmlns="http://www.isis.cm/config/module"
+        xmlns:e="http://www.isis.cm/config/explorer-tree">
+    <e:explorer-tree>
+
+    </e:explorer-tree>
+</module>

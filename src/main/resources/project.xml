@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://www.isis.cm/config/project"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.isis.cm/config/project  schema/project.xsd">
+    <name>scolaris</name>
+    <version>1.0.0</version>
+    <author>BEKONDO KANGUE Dieunedort</author>
+    <sequence>10</sequence>
+    <summary>
+        <entry local="fr">
+            <value>Plateforme de gestion des activités scolaire</value>
+        </entry>
+        <entry local="en">
+            <value>School Activity Management Platform</value>
+        </entry>
+    </summary>
+    <description>
+        <entry local="fr">
+            <value>Description detaillé du plugin</value>
+        </entry>
+        <entry local="en">
+            <value>Full description of the plugin</value>
+        </entry>
+    </description>
+    <category>education</category>
+    <website>https://www.isis-education.com</website>
+    <type>application</type>
+    <depends>
+
+    </depends>
+</project>

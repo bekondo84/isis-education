@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items xmlns="http://www.isis.cm/config/items"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.isis.cm/config/items schema/items.xsd">
+    <colleciontypes>
+    </colleciontypes>
+    <enumtypes>
+        <enumtype code="SexeEnum" persist="true" package="cm.nzock.education.base">
+            <value code="M"/>
+            <value code="F"/>
+        </enumtype>
+        <enumtype code="YearStatusEnum">
+            <value code="CREATE"/>
+            <value code="OPEN" />
+            <value code="CLOSE" />
+        </enumtype>
+    </enumtypes>
+    <relations>
+
+    </relations>
+    <itemtypes>
+      <itemgroup name="Student management">
+          <itemtype code="Student" package="cm.nzock.education.base" generate="true" persist="true" searchKey="registration">
+              <deployment table="e_student" typecode="00300"/>
+              <attributes>
+                  <attribute qualifier="picture" type="java.lang.String">
+                      <persistence type="persistent"/>
+                      <modifiers />
+                  </attribute>
+                  <attribute qualifier="registration" type="java.lang.String">
+                      <persistence type="persistent"/>
+                      <modifiers unique="true" optional="false" />
+                  </attribute>
+                  <attribute qualifier="name" type="java.lang.String">
+                      <persistence type="persistent"/>
+                      <modifiers optional="false" />
+                  </attribute>
+                  <attribute qualifier="surname" type="java.lang.String">
+                      <persistence type="persistent"/>
+                      <modifiers />
+                  </attribute>
+                  <attribute qualifier="sex" type="SexeEnum">
+                      <persistence type="persistent"/>
+                      <modifiers optional="false"/>
+                  </attribute>
+                  <attribute qualifier="birthday" type="java.util.Date">
+                      <persistence type="persistent"/>
+                      <modifiers optional="false" />
+                  </attribute>
+              </attributes>
+          </itemtype>
+          <itemtype code="SchoolYear" package="cm.nzock.education.base" persist="true" generate="true" searchKey="code">
+              <deployment table="e_year" typecode="00301"/>
+              <attributes>
+                  <attribute qualifier="code" type="java.lang.String">
+                      <persistence type="persistent"/>
+                      <modifiers unique="true" optional="false" />
+                  </attribute>
+                  <attribute qualifier="description" type="ISIS_BIG_STRING">
+                      <persistence type="persistent"/>
+                      <modifiers unique="true" optional="false" />
+                  </attribute>
+                  <attribute qualifier="startAt" type="java.util.Date">
+                      <persistence type="persistent"/>
+                      <modifiers optional="false" />
+                  </attribute>
+                  <attribute qualifier="endAt" type="java.util.Date">
+                      <persistence type="persistent"/>
+                      <modifiers optional="false" />
+                  </attribute>
+                  <attribute qualifier="status" type="YearStatusEnum">
+                      <persistence type="persistent"/>
+                      <modifiers optional="false" />
+                  </attribute>
+              </attributes>
+          </itemtype>
+      </itemgroup>
+    </itemtypes>
+</items>

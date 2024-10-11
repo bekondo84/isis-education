@@ -1,0 +1,9 @@
+INSERT_UPDATE MetaType;code[unique=true];codeType;typeName;parent;generate;persist;abstractClass;description
+;Student;00300;cm.nzock.education.base.StudentModel;  ;true;true;false;  
+;SexeEnum;sexeenum;cm.platform.basecommerce.core.enums.SexeEnum;EnumerateValue;true;true;false;  
+;EnumerateValue;enumeratevalue;cm.platform.basecommerce.core.EnumerateValue;EnumerateValue;true;false;false;Enum base class
+INSERT_UPDATE SexeEnum;code
+;M
+;F
+
+
